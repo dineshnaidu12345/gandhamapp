@@ -29,22 +29,22 @@ function StudentForm(){
     return(
         <div>
             <form onSubmit={studentsForm.handleSubmit} >
-           <input type="text" name="firstname" onChange={studentsForm.handleChange} onBlur={studentsForm.handleBlur} />
+           <input type="text" name="firstname"{...studentsForm.getFieldProps("firstname")} />
            <div>
            <b>{studentsForm.touched.firstname&&studentsForm.errors.firstname&&"Please fill the firstname"}</b> 
            </div>
            
-           <input type="text" name="lastname" onChange={studentsForm.handleChange} />
+           <input type="text"{...studentsForm.getFieldProps("lastname")} name="lastname"  />
            <br />
            <div>
            <b>{studentsForm.errors.lastname&&"Please fill the firstname"}</b> 
 
            </div>
-           <input type="text" name="password" onChange={studentsForm.handleChange} />
+           <input type="text" name="password" {...studentsForm.getFieldProps("password")} />
            <br />
-           <b>{studentsForm.errors.password&&"Please fill the firstname"}</b> <br />
+           <b>{studentsForm.errors.password&&"Please fill the firstname"}</b>
 
-           <input type="text" name="age" onChange={studentsForm.handleChange} />
+           <input type="text" name="age"{...studentsForm.getFieldProps("age")} />
            <br />
            <b>{studentsForm.errors.age&&"Please fill the firstname"}</b> <br /> 
 

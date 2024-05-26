@@ -10,6 +10,7 @@ function productsreducer(state=initialState,action){
     {
        return {...state,cart:[...state.cart,action.payload]} 
     }
+    console.log(action.payload)
   
     return state
 

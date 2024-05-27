@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState={
-    todos:["dinesh","gandham","jagadessh","dsaiRam"]
+    todos:["dinesh","gandham","jagadessh","saiRam"]
 }
 var todoSlice=createSlice({
     name:"todolist",

@@ -10,7 +10,7 @@ import { addtodo } from "./todolistSlice";
         <div>
             <h1>Todolist</h1>
             <input type="text" onChange={(e)=>{setNewtods(e.target.value)}}/>
-            <button onClick={()=>{dispatch(addtodo(newtods))}}>AddTodos</button>
+            <button  type="button" class="btn btn-primary" onClick={()=>{dispatch(addtodo(newtods))}}>AddTodos</button>
             {x.todos?.map((k)=>{
                 return(
                 <li>{k}</li>

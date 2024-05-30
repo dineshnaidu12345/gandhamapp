@@ -19,7 +19,7 @@ function Products(){
     return(
     <div>
         <h1>products</h1>
-        <button onClick={()=>{getProducts()}}>show the products</button>
+        <button  type="button" class="btn btn-info" onClick={()=>{getProducts()}}>show the products</button>
         
         {isLoading&&<h1>....Loading</h1>}
         {isLoading===false &&
